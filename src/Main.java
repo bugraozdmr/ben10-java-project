@@ -21,17 +21,29 @@ public class Main {
 
             if(a.equals("fireball")||a.equals("ateş topu")){
                 fireball fireball1=(fireball)kahraman.uzaylı_sec(a);
-                fireball1.yazdir(); // fireball nesnesinin yazdir() metodunu çağırma
-                fireball1.rep(); // fireball nesnesinin rep() metodunu çağırma
+                if (fireball1 != null) {
+                    fireball1.yazdir(); // fireball nesnesinin yazdir() metodunu çağırma
+                    fireball1.rep(); // fireball nesnesinin rep() metodunu çağırma
+                } else {
+                    System.out.println("Geçersiz");
+                }
             }else if (a.equals("xlr8")||a.equals("şimşek hız")) {
                 xlr8 xlr81 = (xlr8) kahraman.uzaylı_sec(a);
-                xlr81.yazdir();
-                xlr81.rep();
+                if (xlr81 != null) {
+                    xlr81.yazdir();
+                    xlr81.rep();
+                } else {
+                    System.out.println("Geçersiz");
+                }
             }
             else if(a.equals("dort kol")) {
                 dort_kol dort_kol1 = (dort_kol) kahraman.uzaylı_sec(a);
-                dort_kol1.yazdir();
-                dort_kol1.rep();
+                if (dort_kol1 != null) {
+                    dort_kol1.yazdir();
+                    dort_kol1.rep();
+                } else {
+                    System.out.println("Geçersiz");
+                }
             }else System.out.println("Böyle bir karakter mevcut değil");
 
             System.out.print("Uzaylı :");
